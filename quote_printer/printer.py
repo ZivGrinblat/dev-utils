@@ -24,9 +24,11 @@ def print_quotes_with(word):
 
 def print_sorted_quotes(reverse=False):
     sorted_quotes = sorted(quotes, reverse=reverse)
-    print("Sorted quotes:" if not reverse else "Reverse sorted quotes:")
+    direction = "descending" if reverse else "ascending"
+    print(f"Quotes sorted ({direction}):")
     for quote in sorted_quotes:
         print("-", quote)
+
 
 def count_quotes():
     return len(quotes)
