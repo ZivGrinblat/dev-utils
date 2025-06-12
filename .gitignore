@@ -1,17 +1,28 @@
-# Byte-compiled / cache files
+# Python cache and bytecode
 __pycache__/
 *.py[cod]
 *.pyo
 
-# Virtual environment
+# Virtual environments
 env/
 venv/
 .venv/
 
-# Editor files
+# Editor-specific
 .vscode/
 .idea/
-.DS_Store
 
-# OS-generated files
+# OS-specific
+.DS_Store
 Thumbs.db
+
+# Test/log/cache/temp files
+*.log
+*.tmp
+.cache/
+
+# Dataset or model files (optional)
+*.csv
+*.h5
+*.pt
+*.pkl
